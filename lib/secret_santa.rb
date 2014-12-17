@@ -16,4 +16,10 @@ class SecretSanta
       end
     end
   end
+
+  def self.solicit_input
+    puts "Enter each name in the Secret Santa pool, separated by a space:"
+    names = gets.downcase.chomp
+    create_list(names.split(" "))
+  end
 end
