@@ -5,11 +5,13 @@ class SecretSanta
     elsif names.length != names.uniq.length
       "Please enter unique names"
     else
-      # shuffle names and create hash (currently untested)
+      # shuffle names and create array (currently untested)
+      list = []
       shuffled_names = names.dup.shuffle!
       shuffled_names.each_with_index do |name, i|
-        puts "#{name} -> #{shuffled_names[i - 1]}"
+        list << "#{name} -> #{shuffled_names[i - 1]}"
       end
+      list
     end
   end
 
