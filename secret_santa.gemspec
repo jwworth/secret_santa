@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/jwworth/secret_santa'
   s.email       = 'jake@worth-chicago.co'
   s.files       = ['lib/secret_santa.rb']
-  s.license       = 'MIT'
+  s.license     = 'MIT'
 end
