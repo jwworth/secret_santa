@@ -1,13 +1,15 @@
 class SecretSanta
   def self.create_list(names)
     if names.length <= 2
-      "List too short"
+      "ERROR: List too short"
     elsif names.length != names.uniq.length
-      "Please enter unique names"
+      "ERROR: Please enter unique names"
     else
       # shuffle names and create array (currently untested)
       list = []
       shuffled_names = names.dup.shuffle!
+      puts "-" * 40
+      puts "Secret Santa List:"
       shuffled_names.each_with_index do |name, i|
         list << "#{name} -> #{shuffled_names[i - 1]}"
       end
