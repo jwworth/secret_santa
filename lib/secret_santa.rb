@@ -7,12 +7,18 @@ class SecretSanta
     else
       # shuffle names and create array (currently untested)
       list = []
+      digraph_list = []
       shuffled_names = names.dup.shuffle!
-      puts "-" * 40
-      puts "Secret Santa List:"
       shuffled_names.each_with_index do |name, i|
         list << "#{name} -> #{shuffled_names[i - 1]}"
       end
+      # write the list to a dot file for graphviz
+      digraph_list = list.join("; ")
+      digraph = "digraph {#{digraph_list}}\n"
+      File.open('ss_list.dot', 'w') { |f| f.write("#{digraph}") }
+      # return the list
+      puts "-" * 40
+      puts "Secret Santa List:"
       list
     end
   end

@@ -1,2 +1,6 @@
 # ignore built gems
 *.gem
+
+# ignore graphviz files
+*.png
+*.dot
