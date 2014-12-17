@@ -3,10 +3,10 @@ class SecretSanta
     [*args]
   end
 
-  def self.create_list(array)
-    if array.length <= 2
+  def self.create_list(names)
+    if names.length <= 2
       "List too short"
-    elsif array.length != array.uniq.length
+    elsif names.length != names.uniq.length
       "Please enter unique names"
     end
   end
