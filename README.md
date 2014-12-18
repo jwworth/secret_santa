@@ -1,6 +1,6 @@
 # Secret Santa
 
-This is Secret Santa, a Secret Santa engine written in Ruby.
+This is Secret Santa, a Secret Santa engine written in Ruby. It's faster than names in a hat; you can't draw yourself; two people can't draw each other.
 
 ### Installation & Usage
 
