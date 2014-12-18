@@ -27,7 +27,9 @@ david -> edward
 
 List saved to 2014_secret_santa_list.png
 ```
-This creates in your current directory a Graphviz PNG file representing the list.
+This creates a graph like this in your current directory:
+
+![2014 Secret Santa List Example](2014_secret_santa_list_example.png)
 
 ### Contributing
 
