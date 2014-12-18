@@ -15,10 +15,9 @@ class SecretSanta
       # write the list to a graphviz dot file
       digraph_list = list.join("; ")
       digraph = "digraph {#{digraph_list}}\n"
-      File.open('ss_list.dot', 'w') { |f| f.write("#{digraph}") }
+      File.open("#{Time.now.year}_secret_santa_list.dot", 'w') { |f| f.write("#{digraph}") }
       # return the list
-      puts "-" * 40
-      puts "Secret Santa List:"
+      puts "\n#{Time.now.year} Secret Santa List:"
       list
     end
   end
