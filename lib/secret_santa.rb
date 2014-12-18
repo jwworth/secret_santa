@@ -5,14 +5,14 @@ class SecretSanta
     elsif names.length != names.uniq.length
       "ERROR: Please enter unique names"
     else
-      # shuffle names and create array (currently untested)
+      # shuffle names and build lists
       list = []
       digraph_list = []
-      shuffled_names = names.dup.shuffle!
-      shuffled_names.each_with_index do |name, i|
-        list << "#{name} -> #{shuffled_names[i - 1]}"
+      names.shuffle!
+      names.each_with_index do |name, i|
+        list << "#{name} -> #{names[i - 1]}"
       end
-      # write the list to a dot file for graphviz
+      # write the list to a graphviz dot file
       digraph_list = list.join("; ")
       digraph = "digraph {#{digraph_list}}\n"
       File.open('ss_list.dot', 'w') { |f| f.write("#{digraph}") }
