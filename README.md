@@ -19,11 +19,11 @@ Enter each name in the Secret Santa pool, separated by a space:
 => alfred brian carl david edward
 
 2014 Secret Santa List:
-carl -> david
-brian -> carl
-alfred -> brian
-edward -> alfred
-david -> edward
+alfred -> david
+brian -> alfred
+edward -> brian
+carl -> edward
+david -> carl
 
 List saved to 2014_secret_santa_list.png
 ```
