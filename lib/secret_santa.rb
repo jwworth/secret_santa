@@ -10,9 +10,7 @@ class SecretSanta
       list = []
       digraph_list = []
       names.shuffle!
-      names.each_with_index do |name, i|
-        list << "#{name} -> #{names[i - 1]}"
-      end
+      names.each_with_index { |name, i| list << "#{name} -> #{names[i - 1]}" }
       # Write the list to a graphviz dot file
       digraph_list = list.join("; ")
       digraph = "digraph {#{digraph_list}}\n"
