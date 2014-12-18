@@ -28,3 +28,7 @@ david -> edward
 List saved to 2014_secret_santa_list.png
 ```
 This creates in your current directory a Graphviz PNG file representing the list.
+
+### Contributing
+
+If you'd like to contribute to Secret Santa, please submit a pull request via Github.
