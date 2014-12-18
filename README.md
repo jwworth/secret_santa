@@ -16,15 +16,15 @@ Run the executable:
 ```
 $ secret_santa
 Enter each name in the Secret Santa pool, separated by a space:
-joe jim jack jake james
+alfred brian carl david edward
 
 2014 Secret Santa List:
-jim -> joe
-james -> jim
-jake -> james
-jack -> jake
-joe -> jack
+carl -> david
+brian -> carl
+alfred -> brian
+edward -> alfred
+david -> edward
 
 List saved to 2014_secret_santa_list.png
 ```
-This will generate a graphviz PNG file of the list in your current directory.
+This creates in your current directory a graphviz PNG representing the list.
