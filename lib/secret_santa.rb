@@ -8,7 +8,6 @@ class SecretSanta
     else
       # Build the list
       list = []
-      digraph_list = []
       names.shuffle!
       names.each_with_index { |name, i| list << "#{name} -> #{names[i - 1]}" }
       # Write the list to a graphviz dot file
