@@ -9,11 +9,15 @@ class SecretSanta
       # Build the list
       list = []
       names.shuffle!
-      names.each_with_index { |name, i| list << "#{name} -> #{names[i - 1]}" }
+      names.each_with_index do |name, i|
+        list << "#{name} -> #{names[i - 1]}"
+      end
       # Write the list to a graphviz dot file
       digraph_list = list.join('; ')
       digraph = "digraph {#{digraph_list}}\n"
-      File.open("#{Time.now.year}_secret_santa_list.dot", 'w') { |f| f.write("#{digraph}") }
+      File.open("#{Time.now.year}_secret_santa_list.dot", 'w') do |f|
+        f.write("#{digraph}")
+      end
       # Return the list
       puts "\n#{Time.now.year} Secret Santa List:"
       puts list
