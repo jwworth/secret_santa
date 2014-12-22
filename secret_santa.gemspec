@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = 'secret_santa'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.executables << 'secret_santa'
-  s.date        = '2014-12-18'
+  s.date        = '2014-12-22'
   s.summary     = 'A Secret Santa engine, written in Ruby'
   s.description = 'A Secret Santa engine, written in Ruby'
   s.authors     = ['Jake Worth']

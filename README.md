@@ -6,7 +6,7 @@ This is Secret Santa, a Secret Santa engine written in Ruby. It's faster than na
 
 Add to gemfile:
 ```
-gem 'secret_santa', '~> 0.0.2'
+gem 'secret_santa', '~> 0.0.3'
 ```
 Or install:
 ```
